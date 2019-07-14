@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="gameDraw">This game has drawn</string>
+    <string name="playerCross">Player X has won the game!</string>
+    <string name="playerCircle">Player O has won the game!</string>
+    <string name="restart">Restart Game</string>
+    <string name="confirmRestart">Are you sure you want to start a new game?</string>
+    <string name="newGame">New Game!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>

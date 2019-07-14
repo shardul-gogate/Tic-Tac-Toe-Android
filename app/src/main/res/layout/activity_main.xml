@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37474f"
+    tools:ignore="ButtonStyle"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Tic-Tac-Toe!"
+        android:textColor="#eceff1"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" >
+
+        <LinearLayout
+            android:id="@+id/toprow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/lefttop"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/empty" />
+
+            <Button
+                android:id="@+id/midtop"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/empty" />
+
+            <Button
+                android:id="@+id/righttop"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/empty" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/midrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/leftmid"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/empty" />
+
+            <Button
+                android:id="@+id/center"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/empty" />
+
+            <Button
+                android:id="@+id/rightmid"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/empty" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/leftbottom"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/empty" />
+
+            <Button
+                android:id="@+id/midbottom"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/empty" />
+
+            <Button
+                android:id="@+id/rightbottom"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/empty" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/restartBtn"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:text="@string/restart"
+        android:background="#eceff1"
+        android:textSize="30dp" />
+
+</android.support.constraint.ConstraintLayout>
